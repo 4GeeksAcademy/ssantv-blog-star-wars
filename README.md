@@ -1,73 +1,66 @@
-# WebApp Template with React JS
+# Star Wars Blog in React — Galaxy of Characters, Planets, and More
 
+This project is an **interactive Star Wars blog** developed with **React**, where you can explore movies, characters, planets, ships, vehicles, and species from the Star Wars universe, and add your favorites to a personal list.
 
-Used by 4Geeks.com and 4Geeks Academy students, this template helps to bootstrap your first multi-page web applications by integrating with React latest version, vercel deployments and [Vite](https://4geeks.com/lesson/intro-to-vite-module-bundler) for bundling.
+---
 
-### Getting stated:
+## Important Details
 
-> 📦 Make sure you are using at least node version 20.
+- The entire application is dynamically rendered using **React components**.
+- **`useState`**, **`useEffect`**, and a **global reducer** (`useGlobalReducer`) are used to manage:
+  - Data on movies, characters, planets, species, ships, and vehicles.
+  - Favorites list.
+  - Status messages and error handling.
+- The application connects to the **SWAPI API** and reference images hosted on GitHub to display up-to-date data and images.
+- The design uses **custom CSS** and **Bootstrap**, with a dark style and visual details inspired by Star Wars.
 
-1. Install the node package dependencies by typing: `$ npm install`
+---
 
-2. Create a .env file by typing `$ cp .env.example .env`
+## Main features
 
-3. Start coding! and the vite dev server with live reload by typing: `$ npm run start`
+### 1. Explore categories
+- The **Home** page displays an **accordion** with the following categories:
+  - Species
+  - Ships
+  - Movies
+  - Characters
+  - Planets
+  - Vehicles
+- Each category dynamically loads its data from the API and displays it in interactive cards.
 
+### 2. View details of an item
+- Clicking on any card opens the **Details** page with complete information:
+  - High-quality images (with replacements if unavailable).
+  - Category-specific data (e.g., episode and director for movies, gender and height for characters, load capacity for vehicles, etc.).
+  - Button to add the item to favorites.
 
-### Styling
+### 3. Favorites management
+- From any card or details page, you can **add items to favorites**.
+- There is a control to avoid duplicates.
+- The **Navbar** displays a favorites counter and a drop-down menu to:
+  - View all favorites.
+  - Remove any favorite with a single click.
 
-You can update the `./index.css` or create new `.css` files and import them into your current css or js files depending on your needs.
+### 4. Navigation
+- Dynamic navigation with React Router:
+  - `/` → Home with all categories.
+  - `/details/:category/:uid` → Details page for any item.
+  - Direct routes for each category: `/films`, `/people`, `/planets`, `/species`, `/starships`, `/vehicles`.
+- Handling invalid routes with an **Error component**.
 
-### Components
+---
 
-Add more files into your `./src/components` or styles folder as you need them and import them into your current files as needed.
+## How to use the application
 
-💡Note: There is an example using the Context API inside `pages/demo.js`;
+1. Open the application in your browser.
+2. Explore the different categories from the Home or Navbar.
+3. Click on any card to see **full details** about movies, characters, planets, starships, vehicles, or species.
+4. Add items to **favorites** from the card or the details page.
+5. Access your favorites from the Navbar and remove those you no longer want.
 
-### Pages
+---
 
-Add more files into your `./js/pages` and import them in `./routes.jsx`.
-Each page must match at least one route inside `routes.jsx`
-
-### Centralized Store with useReducer
-
-This template comes with a centralized & general state that's shared with all pages and compoentes, we call it "the store".   
-
-The file `./src/store.js` has a default structure for the store, we encourage you to change it and adapt it to your data needs (for example, if you are doing a `Todo list` you will probably have a array of todos here).
-
-+ Learn [how the useReducer works](https://4geeks.com/lesson/optimize-react-components-usereducer).
-+ Read more about [implementing a global state with Context API](https://4geeks.com/lesson/context-api)
-+ Read more about [react hooks](https://content.breatheco.de/lesson/react-hooks-explained)
-
-The store `Provider` for this context is already set on `./src/main.jsx`. You can access the store from any component using the `useGlobalReducer` hook to get the `store` and `dispatcher`. Check `/views/demo.js` to see a demo. Here is a smaller sample:
-
-```jsx
-import useGlobalReducer from "./src/hooks/useGlobalReducer";
-
-const MyComponentSuper = () => {
-  //here you use the hook to get dispatcher and store
-  import { dispatch, store } = useGlobalReducer();
-
-  return <div>{/* you can use your actions or store inside the html */}</div>
-}
-```
-
-## Publish your website!
-
-1. **Vercel:** The FREE recomended hosting provider is [vercel.com](https://vercel.com/), you can deploy in 1 minutes by typing the following 2 commands:
-
-Login (you need to have an account):
-```sh
-$ npm i vercel -g && vercel login
-```
-Deploy:
-```sh
-$ vercel --prod
-```
-✎ Note: If you don't have an account just go to vercel.com, create a account and come back here.
-
-![Vercel example procedure to deploy](https://github.com/4GeeksAcademy/react-hello-webapp/blob/4b530ba091a981d3916cc6e960e370decaf2e234/docs/deploy.png?raw=true)
-
-## Contributors
-
-This template was built as part of the 4Geeks Academy [Coding Bootcamp](https://4geeksacademy.com/us/coding-bootcamp) by [Alejandro Sanchez](https://twitter.com/alesanchezr) and many other contributors. Find out more about our [Full Stack Developer Course](https://4geeksacademy.com/us/coding-bootcamps/part-time-full-stack-developer), [Data Science Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/datascience-machine-learning) and [CyberSecurity Bootcamp](https://4geeksacademy.com/us/coding-bootcamps/cybersecurity).
+## Possible improvements
+- Add a font that matches the blog's theme, as the current one does not have stylized numbers.
+- Add **search** to each category to handle large amounts of data.
+- Incorporate **animations** into the cards and details.

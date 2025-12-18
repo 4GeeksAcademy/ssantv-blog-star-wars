@@ -1,0 +1,7 @@
+.categories {
+  display: flex;
+  justify-content: center;
+  justify-self:center;
+  width: 80%;
+  margin: 3rem 0;
+}

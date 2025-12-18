@@ -1,0 +1,40 @@
+.details-card {
+  background: rgba(42, 17, 17, 50%);
+  border-radius: 16px;
+  padding: 2.5rem;
+  color: #E6E6FF;
+  box-shadow: 0 0 20px #ff00004d;
+}
+
+.details-img {
+  border-radius: 14px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.details-title {
+  color: #FF4C4C;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+.details-list {
+  list-style: none;
+  padding: 0;
+}
+
+.details-list li {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+}
+
+.details-list span {
+  color: #FF4C4C;
+  font-weight: 600;
+}
+
+.card-title {
+  font-size: 15px;
+  color:black;
+}

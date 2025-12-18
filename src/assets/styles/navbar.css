@@ -1,0 +1,48 @@
+.navbar {
+  padding: 0.8rem 1.5rem;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(255, 0, 0, 0.3);
+}
+
+.navbar-brand {
+  font-family: 'Star Wars', sans-serif;
+  color: #FF4C4C;
+  font-size: 1.8rem;
+  text-shadow: 0 0 8px #FF4C4C, 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+.navbar-nav .nav-link {
+  color: #FF4C4C;
+  margin-right: 1rem;
+  font-weight: 600;
+  text-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  color: #FF4C4C;
+  text-shadow: 0 0 15px #FF4C4C, 0 0 25px rgba(255, 76, 76, 0.7);
+}
+
+/* Dropdown */
+.navbar-nav .dropdown-menu {
+  background: rgba(25, 10, 10, 0.95);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(255, 0, 0, 0.2);
+}
+
+.navbar-nav .dropdown-item {
+  color: #FF4C4C;
+}
+
+.navbar-nav .dropdown-item:hover {
+  background: rgba(255, 76, 76, 0.1);
+  color: #FF4C4C;
+}
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}

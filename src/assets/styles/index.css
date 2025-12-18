@@ -1,0 +1,49 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+
+  background:
+    url("https://images.unsplash.com/photo-1475274047050-1d0c0975c63e?fm=jpg&q=60&w=3000");
+
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  font-family: 'Star Wars', sans-serif;
+  color: #d3d3d3;
+}
+
+a{
+  color:#FF4C4C
+}
+
+.icon {
+  height: 36px;
+  filter: drop-shadow(0 0 6px rgba(255, 0, 0, 0.8));
+}
+
+.btn {
+  font-size:10px;
+  max-width: 80%;
+  color: #ffffff;
+  border-color: #FF4C4C;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+}
+
+.error-text {
+  font-size: 4em;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff4c4c, 0 0 20px rgba(255, 76, 76, 0.7);
+}
+
+.yoda-img {
+  border-radius: 50%;
+  filter: drop-shadow(0 0 30px rgba(255, 0, 0, 0.5));
+}
+
+.charging{
+  justify-self: center;
+  font-size: 2em;
+  color: #ffffff;
+  text-shadow: 0 0 10px #ff4c4c, 0 0 20px rgba(255, 76, 76, 0.7);
+}
